@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saransh Sharma | AI/ML Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Animation Libraries -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <!-- Particle Background -->
+  <div id="particle-canvas"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-text">S.</span>
+        <span class="logo-dot"></span>
+      </a>
+      
+      <div class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge" data-aos="fade-up">
+        <span class="badge-pulse"></span>
+        Available for opportunities
+      </div>
+      
+      <div class="hero-text" data-aos="fade-up" data-aos-delay="100">
+        <h1 class="hero-title">
+          <span class="title-greeting">Hi, I'm</span>
+          <span class="title-name">Saransh Sharma</span>
+        </h1>
+        <div class="hero-typing">
+          <span class="typed-text"></span>
+          <span class="cursor-typing">&nbsp;</span>
+        </div>
+        <p class="hero-description">
+          Building intelligent systems that bridge the gap between AI and real-world applications. 
+          Specialized in Machine Learning, Flutter, and Full-Stack Development.
+        </p>
+      </div>
+
+      <div class="hero-cta" data-aos="fade-up" data-aos-delay="200">
+        <a href="#projects" class="btn btn-primary">
+          View Projects
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="assets/Saransh_Sharma_Resume_2026_Data_science.pdf" download class="btn btn-outline">
+          <i class="fas fa-download"></i>
+          Download Resume
+        </a>
+      </div>
+
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-item">
+          <span class="stat-number">1+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+      <div class="image-wrapper">
+        <img src="assets/profile.png" alt="Saransh Sharma" class="profile-image">
+        <div class="image-glow"></div>
+        <div class="floating-card card-1">
+          <i class="fas fa-code"></i>
+          <span>Flutter</span>
+        </div>
+        <div class="floating-card card-2">
+          <i class="fas fa-brain"></i>
+          <span>ML/AI</span>
+        </div>
+        <div class="floating-card card-3">
+          <i class="fas fa-cloud"></i>
+          <span>Cloud</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">About Me</span>
+        <h2 class="section-title">Crafting Code with Purpose</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="about-content">
+        <div class="about-text" data-aos="fade-right">
+          <p class="about-paragraph">
+            I'm a passionate <span class="highlight">AI Engineer</span> and <span class="highlight">Full-Stack Developer</span> 
+            with a knack for building scalable, intelligent applications. My journey in tech started with a curiosity 
+            about how machines learn, and evolved into creating solutions that make a difference.
+          </p>
+          <p class="about-paragraph">
+            Currently, I focus on developing AI-powered applications that solve real-world problems. From 
+            <span class="highlight">healthcare diagnosis systems</span> to <span class="highlight">smart recommendation engines</span>, 
+            I love turning complex challenges into elegant, user-friendly solutions.
+          </p>
+          
+          <div class="about-features">
+            <div class="feature">
+              <i class="fas fa-bolt"></i>
+              <div>
+                <h4>Fast Learner</h4>
+                <p>Adapt quickly to new technologies</p>
+              </div>
+            </div>
+            <div class="feature">
+              <i class="fas fa-lightbulb"></i>
+              <div>
+                <h4>Problem Solver</h4>
+                <p>Creative approach to challenges</p>
+              </div>
+            </div>
+            <div class="feature">
+              <i class="fas fa-users"></i>
+              <div>
+                <h4>Team Player</h4>
+                <p>Collaborative and communicative</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats" data-aos="fade-left">
+          <div class="stats-grid">
+            <div class="stat-box">
+              <div class="stat-circle" data-value="95">
+                <span class="stat-percent">95%</span>
+              </div>
+              <p>Problem Solving</p>
+            </div>
+            <div class="stat-box">
+              <div class="stat-circle" data-value="90">
+                <span class="stat-percent">90%</span>
+              </div>
+              <p>Code Quality</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section - All AI/ML -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">My Work</span>
+        <h2 class="section-title">AI/ML Projects</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- AI Health Diagnosis System -->
+        <div class="project-item" data-aos="fade-up">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/1.png" alt="AI Health Diagnosis System">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/SaranshDataAI/Health_detection_System.git" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://hdads.netlify.app/" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <span class="project-category">AI/ML</span>
+            </div>
+            <div class="project-info">
+              <h3>AI Health Diagnosis System</h3>
+              <p>Full-stack AI-powered health diagnosis platform with ML backend, real-time analysis, and multilingual support.</p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>Flutter</span>
+                <span>Scikit-learn</span>
+                <span>NLP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CineMatch -->
+        <div class="project-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/movie-recommender.png" alt="CineMatch - AI Movie Recommendation">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/SaranshDataAI/CineMatch.git" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://ai-recommender-ef211.web.app/" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <span class="project-category">AI/ML</span>
+            </div>
+            <div class="project-info">
+              <h3>CineMatch</h3>
+              <p>AI-Powered Hybrid Movie Recommendation System built with a 60% SBERT semantic similarity model and 40% TF-IDF content-based engine to deliver highly personalized and context-aware movie suggestions from TMDB data. Designed to understand both user intent and movie metadata for smarter recommendations. Developed as a full-stack Flutter Web App featuring real-time autocomplete search, Firebase Authentication, and Firebase Database integration for secure access and seamless user experience.</p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>Scikit-learn</span>
+                <span>TF-IDF</span>
+                <span>SBERT</span>
+                <span>Firebase Authentication</span>
+                <span>Firebase Database</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mumbai House Price Predictor -->
+        <div class="project-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/screenshot3.jpg" alt="Mumbai House Price Predictor">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/SaranshDataAI/Mobile_Mumbai_app.git" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <span class="project-category">AI/ML</span>
+            </div>
+            <div class="project-info">
+              <h3>Mumbai House Price Predictor</h3>
+              <p>Production-grade Flutter app with ML backend for real-time house price prediction in Mumbai.</p>
+              <div class="project-tech">
+                <span>Flutter</span>
+                <span>Python</span>
+                <span>ML</span>
+                <span>XGBoost</span>
+                <span>FastAPI</span>
+                <span>Regression</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer Churn Prediction -->
+        <div class="project-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/churn-prediction.png" alt="Customer Churn Prediction Model">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/SaranshDataAI/Customer-Churn-Complete-project.git" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://curious-duckanoo-2e6d7d.netlify.app" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <span class="project-category">AI/ML</span>
+            </div>
+            <div class="project-info">
+              <h3>Customer Churn Prediction</h3>
+              <p> End-to-end ML-powered customer churn prediction with automated real-time inference and scheduled retraining. 
+  FastAPI backend ensures low-latency predictions while Neon DB handles live data persistence. 
+  Intelligent retraining script refreshes the entire pipeline with new database entries automatically. 
+  Cross-platform Flutter web app delivers real-time predictions and insights to users. 
+  A production-grade solution combining modern ML ops with scalable backend architecture and sleek UI.</p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>Scikit-learn</span>
+                <span>Neon DB</span>
+                <span>FastAPI</span>
+                <span>Flutter</span>
+                <span>Classification</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- IPL Win Predictor -->
+        <div class="project-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/ipl.png" alt="IPL Win Predictor">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/SaranshDataAI/IPL_WIN_PREDICTOR_CODE.git" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://regal-kitsune-23c584.netlify.app" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <span class="project-category">AI/ML</span>
+            </div>
+            <div class="project-info">
+              <h3>IPL Win Predictor</h3>
+              <p>Real-time IPL Match Win Probability Predictor using XGBoost, trained on historical IPL match data to generate highly accurate live win predictions based on runs required, wickets in hand, overs remaining, current run rate, and target score. Built as a full-stack application with Firebase Authentication for secure user login and Firebase Database for storing user activity and predictions.</p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>Scikit-learn</span>
+                <span>Pandas</span>
+                <span>flutter</span>
+                <span>XGBoost</span>
+                <span>Firebase Authentication</span>
+                <span>Firebase Database</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">Technical Expertise</span>
+        <h2 class="section-title">AI/ML & Data Science Stack</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="skills-container">
+        <!-- Machine Learning -->
+        <div class="skills-category" data-aos="fade-up">
+          <h3>
+            <i class="fas fa-brain"></i>
+            Machine Learning
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-card" data-type="ml">
+              <div class="skill-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h4>Scikit-Learn</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Regression</span>
+                <span class="skill-tag">Classification</span>
+                <span class="skill-tag">Clustering</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="ml">
+              <div class="skill-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h4>XGBoost</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Gradient Boosting</span>
+                <span class="skill-tag">Ensemble Methods</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="ml">
+              <div class="skill-icon">
+                <i class="fas fa-tree"></i>
+              </div>
+              <h4>Random Forest</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Decision Trees</span>
+                <span class="skill-tag">Bagging</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="ml">
+              <div class="skill-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <h4>Feature Engineering</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Selection</span>
+                <span class="skill-tag">Extraction</span>
+                <span class="skill-tag">Scaling</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="ml">
+              <div class="skill-icon">
+                <i class="fas fa-chart-pie"></i>
+              </div>
+              <h4>Model Evaluation</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Cross-validation</span>
+                <span class="skill-tag">Hyperparameter Tuning</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="ml">
+              <div class="skill-icon">
+                <i class="fas fa-sitemap"></i>
+              </div>
+              <h4>Ensemble Learning</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Stacking</span>
+                <span class="skill-tag">Voting</span>
+                <span class="skill-tag">Bagging</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deep Learning -->
+        <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+          <h3>
+            <i class="fas fa-network-wired"></i>
+            Deep Learning
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-card" data-type="dl">
+              <div class="skill-icon">
+                <i class="fas fa-cube"></i>
+              </div>
+              <h4>TensorFlow / Keras</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Neural Networks</span>
+                <span class="skill-tag">CNN</span>
+                <span class="skill-tag">RNN</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="dl">
+              <div class="skill-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h4>PyTorch</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Dynamic Graphs</span>
+                <span class="skill-tag">Transfer Learning</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="dl">
+              <div class="skill-icon">
+                <i class="fas fa-language"></i>
+              </div>
+              <h4>Natural Language Processing</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">BERT</span>
+                <span class="skill-tag">Transformers</span>
+                <span class="skill-tag">spaCy</span>
+                <span class="skill-tag">NLTK</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="dl">
+              <div class="skill-icon">
+                <i class="fas fa-eye"></i>
+              </div>
+              <h4>Computer Vision</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">OpenCV</span>
+                <span class="skill-tag">YOLO</span>
+                <span class="skill-tag">ResNet</span>
+                <span class="skill-tag">Object Detection</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="dl">
+              <div class="skill-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h4>LLMs & Generative AI</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">GPT</span>
+                <span class="skill-tag">LangChain</span>
+                <span class="skill-tag">RAG</span>
+                <span class="skill-tag">Prompt Engineering</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="dl">
+              <div class="skill-icon">
+                <i class="fas fa-wave-square"></i>
+              </div>
+              <h4>Time Series Analysis</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">LSTM</span>
+                <span class="skill-tag">GRU</span>
+                <span class="skill-tag">Prophet</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Science -->
+        <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+          <h3>
+            <i class="fas fa-chart-pie"></i>
+            Data Science
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-card" data-type="ds">
+              <div class="skill-icon">
+                <i class="fab fa-python"></i>
+              </div>
+              <h4>Python</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">SciPy</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="ds">
+              <div class="skill-icon">
+                <i class="fas fa-chart-bar"></i>
+              </div>
+              <h4>Data Visualization</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Matplotlib</span>
+                <span class="skill-tag">Seaborn</span>
+                <span class="skill-tag">Plotly</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="ds">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h4>SQL</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">MongoDB</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="ds">
+              <div class="skill-icon">
+                <i class="fas fa-calculator"></i>
+              </div>
+              <h4>Statistics</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Hypothesis Testing</span>
+                <span class="skill-tag">Probability</span>
+                <span class="skill-tag">A/B Testing</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="ds">
+              <div class="skill-icon">
+                <i class="fas fa-table"></i>
+              </div>
+              <h4>Data Wrangling</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Cleaning</span>
+                <span class="skill-tag">Transformation</span>
+                <span class="skill-tag">Imputation</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="ds">
+              <div class="skill-icon">
+                <i class="fas fa-power-off"></i>
+              </div>
+              <h4>Power BI</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">DAX</span>
+                <span class="skill-tag">Dashboards</span>
+                <span class="skill-tag">Data Modeling</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MLOps & Tools -->
+        <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+          <h3>
+            <i class="fas fa-tools"></i>
+            MLOps & Tools
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-card" data-type="tools">
+              <div class="skill-icon">
+                <i class="fab fa-docker"></i>
+              </div>
+              <h4>Docker</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Containerization</span>
+                <span class="skill-tag">Image Creation</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="tools">
+              <div class="skill-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h4>Cloud Platforms</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">GCP</span>
+                <span class="skill-tag">Azure</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="tools">
+              <div class="skill-icon">
+                <i class="fas fa-code-branch"></i>
+              </div>
+              <h4>MLflow</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Experiment Tracking</span>
+                <span class="skill-tag">Model Registry</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="tools">
+              <div class="skill-icon">
+                <i class="fab fa-git-alt"></i>
+              </div>
+              <h4>Version Control</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">GitLab</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="tools">
+              <div class="skill-icon">
+                <i class="fas fa-flask"></i>
+              </div>
+              <h4>Model Deployment</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">REST APIs</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="tools">
+              <div class="skill-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h4>CI/CD for ML</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">GitHub Actions</span>
+                <span class="skill-tag">Jenkins</span>
+              </div>
+            </div>
+
+            <div class="skill-card" data-type="tools">
+              <div class="skill-icon">
+                <i class="fas fa-fire"></i>
+              </div>
+              <h4>Firebase</h4>
+              <div class="skill-tags">
+                <span class="skill-tag">Firestore</span>
+                <span class="skill-tag">Authentication</span>
+                <span class="skill-tag">Hosting</span>
+                <span class="skill-tag">Realtime DB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-counter" data-aos="fade-up">
+        <div class="counter-item">
+          <div class="counter-number">20+</div>
+          <div class="counter-label">ML Models</div>
+        </div>
+        <div class="counter-item">
+          <div class="counter-number">5+</div>
+          <div class="counter-label">DL Projects</div>
+        </div>
+        <div class="counter-item">
+          <div class="counter-number">10+</div>
+          <div class="counter-label">Tools</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-subtitle">Get in Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <a href="mailto:sharmasaranshwork@gmail.com">sharmasaranshwork@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Phone</h3>
+              <a href="tel:+918290609736">+91 82906 09736</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="contact-details">
+              <h3>LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/saranshds/" target="_blank">Connect with me</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Location</h3>
+              <p>Ajmer, Rajasthan, India</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form" data-aos="fade-left">
+          <form id="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Send Message
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Saransh Sharma</h3>
+          <p>Building the future, one line of code at a time.</p>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://github.com/SaranshDataAI" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/saranshds/" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-link">
+            <i class="fab fa-medium"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Saransh Sharma. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

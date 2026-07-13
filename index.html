@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saransh Sharma — AI/ML Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Saransh<span class="logo-accent">.</span></a>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <span class="hero-eyebrow">AI / ML Engineer &amp; Flutter Developer</span>
+        <h1 class="hero-title">Saransh Sharma</h1>
+        <p class="hero-bio">
+          I build end-to-end intelligent systems — from training neural networks to shipping
+          full-stack apps that real users interact with. My work lives at the intersection of
+          machine learning and clean product engineering.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">See My Work</a>
+          <a href="assets/Saransh_Resume_2026_Data_science_main.pdf" download class="btn btn-outline">
+            <i class="fas fa-download"></i> Resume
+          </a>
+        </div>
+        <div class="hero-meta">
+          <span><i class="fas fa-map-marker-alt"></i> Ajmer, Rajasthan</span>
+          <span class="dot">·</span>
+          <span class="status-dot"></span>
+          <span>Open to opportunities</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/profile.png" alt="Saransh Sharma" class="profile-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-label">About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Building things that work, end to end.</h2>
+          <p>
+            I'm a self-driven developer focused on AI and data science, Currently exploring advanced deep learning systems, recommendation architectures, and production AI deployment while continuing hands-on project development. Most of my learning
+            has happened by shipping real projects — recommendation engines, forecasting systems,
+            and mobile apps — not just completing tutorials.
+          </p>
+          <p>
+            My stack spans Python (TensorFlow, Scikit-learn, FastAPI) on the backend and Flutter
+            on the frontend, with Firebase handling auth and storage. I deploy on Render and
+            Firebase Hosting. I care about models that actually work in production, not just
+            ones that look good in a notebook.
+          </p>
+          <div class="about-links">
+            <a href="https://github.com/SaranshDataAI" target="_blank" class="inline-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/saranshds/" target="_blank" class="inline-link">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:sharmasaranshwork@gmail.com" class="inline-link">
+              <i class="fas fa-envelope"></i> Email
+            </a>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-num">6</div>
+            <div class="stat-desc">publicly deployed AI applications</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">~2.45%</div>
+            <div class="stat-desc">average MAPE across validation stocks</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">60/40</div>
+            <div class="stat-desc">CineMatch hybrid engine: SBERT + TF-IDF split</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">5+</div>
+            <div class="stat-desc">Global markets covered by FinanceAI (US, IN, UK, JP, Crypto)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title">What I've built</h2>
+
+      <!-- FLAGSHIP: CineMatch -->
+      <div class="flagship-card cinematch">
+        <div class="flagship-header">
+          <div>
+            <span class="flagship-tag">Flagship Project</span>
+            <h3 class="flagship-title">CineMatch</h3>
+            <p class="flagship-subtitle">Hybrid AI Movie Recommendation Engine</p>
+          </div>
+          <div class="flagship-links">
+            <a href="https://github.com/SaranshDataAI/CineMatch.git" target="_blank" class="icon-link" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://cinematch-v2-e3f6a.web.app" target="_blank" class="icon-link" title="Live Demo">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+        <div class="flagship-body">
+          <div class="flagship-image">
+            <img src="assets/movie-recommender.png" alt="CineMatch screenshot" />
+          </div>
+          <div class="flagship-info">
+            <p class="flagship-desc">
+              Most recommendation systems pick one approach. CineMatch uses two: a SBERT semantic
+              similarity model handles 60% of the scoring to understand the intent behind a query
+              ("films like Arrival but grounded in science"), while a TF-IDF content engine covers
+              the remaining 40% for metadata precision. The blend was tuned empirically against
+              TMDB data until results felt natural rather than just statistically correct.
+            </p>
+            <div class="flagship-metrics">
+              <div class="metric">
+                <span class="metric-value">SBERT + TF-IDF</span>
+                <span class="metric-label">Hybrid ranking engine</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">60 / 40</span>
+                <span class="metric-label">Semantic vs content weight</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">TMDB</span>
+                <span class="metric-label">Real movie metadata source</span>
+              </div>
+            </div>
+            <p class="flagship-tech-note">
+              Flutter Web frontend with real-time autocomplete search. Firebase Authentication
+              and Realtime Database for user sessions. FastAPI backend serves the model.
+            </p>
+            <div class="tech-pills">
+              <span>Python</span><span>SBERT</span><span>TF-IDF</span>
+              <span>Scikit-learn</span><span>FastAPI</span><span>Flutter</span>
+              <span>Firebase</span><span>SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FLAGSHIP: FinanceAI -->
+      <div class="flagship-card financeai">
+        <div class="flagship-header">
+          <div>
+            <span class="flagship-tag">Flagship Project</span>
+            <h3 class="flagship-title">FinanceAI</h3>
+            <p class="flagship-subtitle">Intelligent Stock Analysis Platform</p>
+          </div>
+          <div class="flagship-links">
+            <a href="https://github.com/SaranshDeepAI/Finance-AI-Main.git" target="_blank" class="icon-link" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://financeai-968a9.web.app" target="_blank" class="icon-link" title="Live Demo">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+        <div class="flagship-body">
+          <div class="flagship-image">
+            <img src="assets/financeai.png" alt="FinanceAI screenshot" />
+          </div>
+          <div class="flagship-info">
+            <p class="flagship-desc">
+              FinanceAI layers three independent signals into one platform: an LSTM neural network
+              forecasts 7-day price movement with a ~2.45% mean absolute percentage error; a
+              Z-Score anomaly detector flags statistically unusual market behaviour (useful for
+              spotting pre-crash signals); and a LLaMA 4 model with a RAG pipeline synthesises
+              news and financials into a readable investment report. Each signal can be used alone
+              or together. Works across US, Indian, UK, German, Japanese markets and crypto.
+            </p>
+            <div class="flagship-metrics">
+              <div class="metric">
+                <span class="metric-value">~2.45%</span>
+                <span class="metric-label">LSTM forecast MAPE</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">Z-Score</span>
+                <span class="metric-label">Anomaly detection method</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">LLaMA 4 + RAG</span>
+                <span class="metric-label">LLM investment reports</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">5+ markets</span>
+                <span class="metric-label">US, IN, UK, DE, JP, Crypto</span>
+              </div>
+            </div>
+            <p class="flagship-tech-note">
+              Flutter Web frontend, FastAPI backend on Render. Firebase Auth + Firestore for user
+              data. TensorFlow for the LSTM. LangChain orchestrates the RAG pipeline.
+            </p>
+            <div class="tech-pills">
+              <span>Python</span><span>TensorFlow</span><span>LSTM</span>
+              <span>LLaMA 4</span><span>LangChain</span><span>RAG</span>
+              <span>FastAPI</span><span>Flutter</span><span>Firebase</span><span>SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other Projects Grid -->
+      <div class="other-projects-title">Other Projects</div>
+      <div class="projects-grid">
+
+        <!-- AI Health Diagnosis System -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/1.png" alt="AI Health Diagnosis System" />
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>AI Health Diagnosis System</h3>
+              <div class="project-links">
+                <a href="https://github.com/SaranshDataAI/Health_detection_System.git" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://hdads.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <p>Full-stack health diagnosis tool with an ML backend for symptom analysis. Supports multiple languages; built with Flutter and FastAPI with a Scikit-learn classifier pipeline under the hood.</p>
+            <div class="tech-pills sm">
+              <span>Python</span><span>FastAPI</span><span>Flutter</span><span>Scikit-learn</span><span>NLP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mumbai House Price Predictor -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/screenshot3.jpg" alt="Mumbai House Price Predictor" />
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Mumbai House Price Predictor</h3>
+              <div class="project-links">
+                <a href="https://github.com/SaranshDataAI/Mobile_Mumbai_app.git" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <p>Flutter mobile app backed by an XGBoost regression model trained on Mumbai real estate data. Gives real-time price estimates based on location, size, and amenities via a FastAPI endpoint.</p>
+            <div class="tech-pills sm">
+              <span>Flutter</span><span>XGBoost</span><span>FastAPI</span><span>Regression</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer Churn Prediction -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/churn-prediction.png" alt="Customer Churn Prediction" />
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Customer Churn Prediction</h3>
+              <div class="project-links">
+                <a href="https://github.com/SaranshDataAI/Customer-Churn-Complete-project.git" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://curious-duckanoo-2e6d7d.netlify.app" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <p>End-to-end churn classifier with automated retraining: when new records land in Neon DB, a scheduled script retrains the pipeline and hot-swaps the model. FastAPI handles low-latency inference; Flutter web delivers the predictions dashboard.</p>
+            <div class="tech-pills sm">
+              <span>Python</span><span>Scikit-learn</span><span>Neon DB</span><span>FastAPI</span><span>Flutter</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IPL Win Predictor -->
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="assets/ipl.png" alt="IPL Win Predictor" />
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>IPL Win Predictor</h3>
+              <div class="project-links">
+                <a href="https://github.com/SaranshDataAI/IPL_WIN_PREDICTOR_CODE.git" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://regal-kitsune-23c584.netlify.app" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <p>Live win-probability engine for IPL matches using XGBoost trained on historical match data. Takes runs required, wickets remaining, current run rate, and overs left as inputs and outputs real-time win probability. Firebase Auth for user sessions.</p>
+            <div class="tech-pills sm">
+              <span>XGBoost</span><span>Flutter</span><span>Firebase</span><span>Scikit-learn</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-label">Skills</div>
+      <h2 class="section-title">Technical stack</h2>
+      <div class="skills-layout">
+
+        <div class="skill-group">
+          <h3>Machine Learning</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Scikit-learn</span>
+              <span class="skill-detail">Classification · Regression · Clustering · Pipeline</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">XGBoost / LightGBM</span>
+              <span class="skill-detail">Gradient boosting · Ensemble methods</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Feature Engineering</span>
+              <span class="skill-detail">Selection · Scaling · Imputation · Encoding</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Model Evaluation</span>
+              <span class="skill-detail">Cross-validation · Hyperparameter tuning · Metrics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Deep Learning</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">TensorFlow / Keras</span>
+              <span class="skill-detail">CNN · RNN · LSTM · Transfer learning</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">NLP</span>
+              <span class="skill-detail">SBERT · TF-IDF · BERT · spaCy · NLTK</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">LLMs & RAG</span>
+              <span class="skill-detail">LLaMA 4 · LangChain · Prompt engineering</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Time Series</span>
+              <span class="skill-detail">LSTM · GRU · Anomaly detection · Z-Score</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Data & Analysis</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <span class="skill-detail">Pandas · NumPy · SciPy · Matplotlib · Seaborn</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">SQL</span>
+              <span class="skill-detail">PostgreSQL · Neon DB · Data modelling</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Statistics</span>
+              <span class="skill-detail">Hypothesis testing · A/B testing · Probability</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Power BI</span>
+              <span class="skill-detail">DAX · Dashboards · Data modelling</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Engineering & Deployment</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">FastAPI</span>
+              <span class="skill-detail">REST APIs · Model serving · Background tasks</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Flutter / Dart</span>
+              <span class="skill-detail">Cross-platform · Web · Riverpod · GetX · Dio</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Firebase</span>
+              <span class="skill-detail">Auth · Firestore · Realtime DB · Hosting</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Deployment</span>
+              <span class="skill-detail">Render · Netlify · Firebase Hosting · Docker</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Get in touch</h2>
+      <p class="contact-intro">
+        I'm actively looking for roles in AI/ML engineering or data science — full-time or
+        internships. Feel free to reach out directly.
+      </p>
+      <div class="contact-cards">
+        <a href="mailto:sharmasaranshwork@gmail.com" class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">sharmasaranshwork@gmail.com</div>
+          </div>
+        </a>
+        <a href="tel:+918290609736" class="contact-card">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <div class="contact-label">Phone</div>
+            <div class="contact-value">+91 82906 09736</div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/saranshds/" target="_blank" class="contact-card">
+          <i class="fab fa-linkedin"></i>
+          <div>
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value">linkedin.com/in/saranshds</div>
+          </div>
+        </a>
+        <a href="https://github.com/SaranshDataAI" target="_blank" class="contact-card">
+          <i class="fab fa-github"></i>
+          <div>
+            <div class="contact-label">GitHub</div>
+            <div class="contact-value">github.com/SaranshDataAI</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 Saransh Sharma</span>
+      <div class="footer-social">
+        <a href="https://github.com/SaranshDataAI" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/saranshds/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
